@@ -1,8 +1,50 @@
+@font-face {
+    font-family: MontserratAlternates-Regular;
+    src: url(/font/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(/font/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(/font/Montserrat/static/Montserrat-Light.ttf);
+}
+
+:root {
+    --main-color: #F5EBE0;
+    --secondary-color: #ede0d4;
+    --font-size: 16px;
+    --main-font-family: "Montserrat-Regular"; 
+    --secondary-font-family: "MontserratAlternates-Regular";
+    --quote-font-family: "Montserrat-Light"
+}
+
 body {
-    background-color: #edede9;
+    background-color: var(--main-color);
+    font-family: var(--main-font-family);
 }
 
 header {
-    background-color: #d6ccc2;
-    
+    background-color: #ede0d4;
+    display: flex; 
+    justify-content: space-between;  
+    border: 1px #403d39 solid; 
+}
+
+nav {
+    margin: auto;
+}
+
+.banner {
+   background-image: url(images/image1.jpg);
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+}
+.block-column img {
+    width: 400px;
+}
+footer {
+    background-color: var(--secondary-color);
 }
