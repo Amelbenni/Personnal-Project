@@ -12,7 +12,7 @@
 }
 
 :root {
-    --main-color: #F5EBE0;
+    --main-color: #a68a64;
     --secondary-color: #ede0d4;
     --font-size: 16px;
     --main-font-family: "Montserrat-Regular"; 
@@ -23,28 +23,75 @@
 body {
     background-color: var(--main-color);
     font-family: var(--main-font-family);
+    margin : 0px;
+    padding : 0px;
 }
 
 header {
     background-color: #ede0d4;
     display: flex; 
     justify-content: space-between;  
-    border: 1px #403d39 solid; 
+    border-bottom: 1px #403d39 solid; 
+    height: 90px;
 }
-
+header img {
+    width: 80px;
+    height: 80px;
+}
 nav {
-    margin: auto;
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    font-family: var(--secondary-font-family);
+    color: #403d39;
+    font-weight: 400;
 }
-
+nav a:hover{
+    color: #d4a373;
+}
+nav a {
+    color: #403d39;
+}
 .banner {
    background-image: url(images/image1.jpg);
    height: 500px;
    background-position: center;
    background-size: cover;
+   
+}
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
+.quote {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--quote-font-family);
+}
+.quote h3 {
+    font-size: 30px;
+    font-family: var(--secondary-font-family);
+}
+
+.block-column {
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
+}
+.block-column div {
+    width: 300px;
+    padding: 60px;
+    border: #ede0d4 solid;
 }
 .block-column img {
-    width: 400px;
+    width: 300px;
+    height: 300px; 
 }
+
 footer {
     background-color: var(--secondary-color);
 }
