@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .block-column div {
@@ -83,4 +84,50 @@
 
 .wrapper img:hover {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .block-wrapper {
+        flex-direction: column;
+    }
+
+    .block-wrapper .wrapper {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .wrapper-text p {
+        padding: 0 0 45px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .block-column div {
+        padding: 0;
+    }
+
+    .block2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .block2 img {
+        margin: 0 10px 20px 10px;
+        width: 95%;
+        padding: 0;
+    }
+
+    .block2 p {
+        max-width: unset;
+        text-align: justify;
+        margin: 0 10px 20px 10px;
+    }
+
+    .block-wrapper .wrapper-text p {
+        width: 90%;
+        padding: 10px 10px 35px 10px;
+        max-width: unset;
+    }
 }

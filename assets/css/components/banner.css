@@ -26,6 +26,11 @@
     font-size: 50px;
 }
 
+.banner-content p {
+    max-width: 80%;
+    text-align: center;
+}
+
 .banner-articles-background-image {
     background-image: url(../../images/banner-articles.jpg);
     background-position: center;
@@ -42,4 +47,10 @@
     height: 100%;
     width: 100%;
     filter: blur(3px);
+}
+
+@media screen and (max-width: 425px) {
+    .banner-content p {
+        font-size: 22px;
+    }
 }

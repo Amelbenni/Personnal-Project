@@ -10,3 +10,10 @@
     font-size: 30px;
     font-family: var(--secondary-font-family);
 }
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
