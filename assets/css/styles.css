@@ -1,0 +1,13 @@
+@import './utils/reset.css';
+
+@import './variables/fonts.css';
+@import './variables/global.css';
+
+@import './components/container.css';
+
+@import './components/banner.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/article.css';
+@import './components/block.css';
+@import './components/bibli-table.css';

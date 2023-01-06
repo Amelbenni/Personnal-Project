@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: var(--footer-color);
+    width: 100%
+}
+
+.footer p {
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.social a {
+    padding: 0 20px;
+}
+
+.social img {
+    height: 40px;
+    width: 40px;
+}
