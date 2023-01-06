@@ -2,10 +2,12 @@
     font-family: MontserratAlternates-Regular;
     src: url(/font/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
 }
+
 @font-face {
     font-family: Montserrat-Regular;
     src: url(/font/Montserrat/static/Montserrat-Regular.ttf);
 }
+
 @font-face {
     font-family: Montserrat-Light;
     src: url(/font/Montserrat/static/Montserrat-Light.ttf);
@@ -17,14 +19,15 @@
     --container-color: #856548;
     --footer-color: #473F22;
     --font-size: 16px;
-    --main-font-family: "Montserrat-Regular"; 
+    --main-font-family: "Montserrat-Regular";
     --secondary-font-family: "MontserratAlternates-Regular";
     --quote-font-family: "Montserrat-Light"
 }
 
-html, body {
-    margin : 0px;
-    padding : 0px;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -33,31 +36,32 @@ body {
     font-family: var(--main-font-family);
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--secondary-color);
-    display: flex; 
-    justify-content: space-between;  
-    border-bottom: 1px #403d39 solid; 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #403d39 solid;
     height: 90px;
 }
 
-.title-logo, .title-logo-footer {
+.title-logo {
     display: flex;
     align-items: center;
 }
 
-.title-logo img, .title-logo-footer img {
+.title-logo img {
     width: 80px;
     height: 80px;
     padding-left: 30px;
 }
 
-.title-logo p, .title-logo-footer p{
-color: #403d39 ;
-padding-left: 20px;
-font-size: 20px;
-font-family: var(--primary-font-family);
-text-transform: uppercase;
+.title-logo p {
+    color: #403d39;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: var(--primary-font-family);
+    text-transform: uppercase;
 }
 
 nav {
@@ -71,30 +75,32 @@ nav {
     color: #403d39;
     font-weight: 400;
 }
-nav a:hover{
+
+nav a:hover {
     color: #d4a373;
 }
+
 nav a {
     color: #403d39;
 }
 
 .banner {
-   height: 700px;
-   display: flex;
-   position: relative;
-   border-bottom: 1px #403d39 solid; 
+    height: 700px;
+    display: flex;
+    position: relative;
+    border-bottom: 1px #403d39 solid;
 }
 
 .banner-background-image {
-    background-image: url(images/image1.jpg);  
-   background-position: center;
-   background-size: cover;
-   height: 100%;
-   width: 100%;
-   filter: blur(3px);
+    background-image: url(images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
 }
 
-.banner-content{
+.banner-content {
     width: 100%;
     height: 100%;
     font-family: var(--secondary-font-family);
@@ -104,10 +110,12 @@ nav a {
     justify-content: center;
     align-items: center;
 }
+
 .block1 {
     display: flex;
     flex-direction: column;
 }
+
 .container {
     width: 50%;
     margin: auto;
@@ -115,16 +123,18 @@ nav a {
     padding: 40px 20px 10px 20px;
     font-family: var(--quote-font-family);
 }
-.container h3 {
+
+.container h3,
+.block-articles h3 {
     font-size: 30px;
     font-family: var(--secondary-font-family);
 }
 
 .block-column {
-display: flex;
-flex-direction: row;
-justify-content: center;
-text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 
 .block-column div {
@@ -135,11 +145,11 @@ text-align: center;
 
 .block-column img {
     width: 300px;
-    height: 300px; 
+    height: 300px;
     border: 1px #403d39 solid;
 }
 
-.block-column img:hover{
+.block-column img:hover {
     opacity: 0.5;
 }
 
@@ -155,11 +165,17 @@ text-align: center;
     text-align: center;
 }
 
+.block2 p {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
 .block2 img {
     width: 60%;
     height: 700px;
     padding: 20px;
 }
+
 .block-wrapper {
     display: flex;
 }
@@ -171,32 +187,140 @@ text-align: center;
     text-align: center;
 }
 
+.wrapper-text p {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     margin: 20px;
-    width: 60%
-    
+    width: 80%;
+    flex-grow: 3;
 }
 
-.wrapper img{
+.wrapper img {
     width: 100%;
     height: 100%;
-  
+
 }
+
 .wrapper img:hover {
     opacity: 0.5;
 }
 
 footer {
     background-color: var(--footer-color);
+    width: 100%
 }
 
-.title-logo-footer p {
+.footer p {
     color: var(--secondary-color);
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 30px;
+}
+
+.social img {
+    height: 40px;
+    width: 40px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.banner-articles-background-image {
+    background-image: url(images/banner-articles.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
 }
 
 .articles {
-    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.block-articles {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.block-articles-item {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    background-color: rgba(133,101,72, 0.8);
+    padding: 20px;
+}
+
+.articles-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.articles-meta {
+    text-align: end;
+    padding-top: 20px;
+}
+
+.block-articles img {
+    width: 300px;
+    height: 300px;
+    border: 1px #403d39 solid;
+}
+
+.block-articles img:hover {
+    opacity: 0.5;
+}
+
+.banner-bibli-background-image {
+    background-image: url(images/bibli-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+}
+
+.bibli {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+table,
+td {
+    border: 1px solid var(--container-color);
+    font-family: var(--main-font-family);
+    text-align: center;
+    width: 800px;
+}
+
+thead,
+tfoot {
+    background-color: var(--container-color);
+    color: var(--main-color);
+}
+
+td img {
+    height: 200px;
+    width: 150px;
+}
+
+td img:hover {
+    opacity: 0.5;
 }
