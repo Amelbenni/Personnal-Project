@@ -2,8 +2,23 @@ header {
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px #403d39 solid;
+    border-bottom: 1px var(--border-color) solid;
     height: 90px;
+}
+
+header .burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.burger .line {
+    width: 50px;
+    background-color: var(--border-color);
+    height: 3px;
+    transition: 0.3s ease-in-out;
 }
 
 .title-logo {
@@ -32,7 +47,7 @@ header {
 }
 
 .title-logo p {
-    color: #403d39;
+    color: var(--border-color);
     padding-left: 20px;
     font-size: 20px;
     text-transform: uppercase;
@@ -44,16 +59,71 @@ nav {
     align-items: center;
     padding-right: 30px;
     font-family: var(--secondary-font-family);
-    color: #403d39;
+    color: var(--border-color);
     font-weight: 400;
 }
 
 nav a {
-    color: #403d39;
+    color: var(--border-color);
     padding: 0 10px;
+    min-width: 150px;
+    margin: auto;
+    text-align: center;
 }
 
 nav a:hover {
     color: #d4a373;
 }
 
+@media screen and (max-width: 768px) {
+    header .title-logo p {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header.sticky {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+
+    header .burger {
+        display: flex;
+    }
+
+    header .burger .line:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    header .burger.active .line:first-child {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    header .burger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    header .burger.active .line:nth-child(3) {
+        transform: rotate(45deg) translate(-12px, -10px);
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+        position: absolute;
+        top: 91px;
+        right: 0;
+        z-index: 10;
+        background-color: var(--secondary-color);
+        border-left: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    nav.active a {
+        padding: 10px;
+    }
+}
