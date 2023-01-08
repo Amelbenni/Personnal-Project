@@ -1,0 +1,36 @@
+.bibli {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+table,
+td {
+    border: 1px solid var(--container-color);
+    font-family: var(--main-font-family);
+    text-align: center;
+    width: 800px;
+    padding: 10px;
+}
+
+thead,
+tfoot {
+    background-color: var(--container-color);
+    color: var(--main-color);
+}
+
+td img {
+    height: 200px;
+    width: 150px;
+}
+
+td img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    td img {
+        width: 50px;
+        height: auto;
+    }
+}

@@ -1,0 +1,148 @@
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.block-column div {
+    width: 300px;
+    padding: 60px;
+    margin: 20px;
+    font-family: var(--main-font-family);
+}
+
+.block-column img {
+    width: 300px;
+    height: 300px;
+    border: 1px #403d39 solid;
+}
+
+.block-column img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.block2 {
+    background-color: var(--container-color);
+    display: flex;
+}
+
+.block2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.block2 p {
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: var(--main-font-family);
+}
+
+.block2 h3 {
+    font-family: var(--secondary-font-family);
+}
+
+.block2 img {
+    width: 60%;
+    height: 700px;
+    padding: 20px;
+}
+
+.block-wrapper {
+    display: flex;
+    padding: 40px;
+}
+
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper-text p {
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: var(--main-font-family);
+}
+
+.wrapper-text h3 {
+    font-family: var(--secondary-font-family);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+    flex-grow: 3;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .block-wrapper {
+        flex-direction: column;
+    }
+
+    .block-wrapper .wrapper {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .wrapper-text p {
+        padding: 0 0 45px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .block-column div {
+        padding: 0;
+    }
+
+    .block2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .block2 img {
+        margin: 0 10px 20px 10px;
+        width: 95%;
+        padding: 0;
+    }
+
+    .block2 p {
+        max-width: unset;
+        text-align: justify;
+        margin: 0 10px 20px 10px;
+    }
+
+    .block-wrapper {
+        padding: 0;
+    }
+
+    .block-wrapper .wrapper-text p {
+        width: 90%;
+        padding: 10px 10px 35px 10px;
+        max-width: unset;
+        text-align: justify;
+    }
+}

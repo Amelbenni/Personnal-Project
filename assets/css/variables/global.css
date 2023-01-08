@@ -1,0 +1,11 @@
+:root {
+    --main-color: #EDEBDF;
+    --secondary-color: #ECE9E4;
+    --container-color: #856548;
+    --footer-color: #473F22;
+    --border-color: #403d39;
+    --font-size: 16px;
+    --main-font-family: "Montserrat-Regular";
+    --secondary-font-family: "MontserratAlternates-Regular";
+    --quote-font-family: "Montserrat-Light"
+}
