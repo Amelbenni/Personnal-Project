@@ -49,8 +49,11 @@
     filter: blur(3px);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .banner-content p {
-        font-size: 22px;
+        font-size: 35px;
+    }
+    .banner-content h1 {
+        font-size: 35px;
     }
 }

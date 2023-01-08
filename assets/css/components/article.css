@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
+    font-family: var(--main-font-family);
 }
 
 .articles-meta {
@@ -43,4 +44,34 @@
 
 .block-articles img:hover {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .block-articles-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articles-content h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .block-articles-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 3px;
+    }
+
+    .block-articles img {
+        width: 200px;
+        height: 200px;
+        border: 1px #403d39 solid;
+    }
+    .block-articles {
+        max-width: 95%;
+    }
 }

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if ($(window).width() < 768) {
+    if ($(window).width() <= 768) {
         let $burger = $('.burger');
         let $nav = $('header nav');
         let $header = $('header');
